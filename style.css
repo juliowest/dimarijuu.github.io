@@ -1,0 +1,45 @@
+body{
+    background-color: black;
+    overflow: hidden;
+    height: 100vb;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main-container{
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 100vw;
+height: 100vh;
+}
+pre{
+
+}
+.snow{
+display: flex;
+width: 12px;
+height: 12px;
+background-color: white;
+border-radius: 50%;
+position: absolute;
+top: -20px;
+}
+@keyframes fall{
+    0%{
+	top:-20px
+    }
+    100%{
+	top: 100vh;
+    }
+}
+@keyframes wind {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(25px); /* Ajusta la cantidad de movimiento horizontal */
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
